@@ -92,14 +92,6 @@
                     
                         <li class="menu-item">
                             <a class=""
-                               href="/tags"
-                            >
-                                TAGS
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
                                href="/categories"
                             >
                                 CATEGORIES
@@ -151,11 +143,6 @@
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/archives">ARCHIVES</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/tags">TAGS</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
@@ -219,9 +206,20 @@
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2023-07-07 00:13:16</span>
+        <span class="pc">2023-08-22 21:14:33</span>
     </span>
     
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/CPE/">CPE</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
     
         <span class="article-tags article-meta-item">
@@ -254,7 +252,8 @@
             <div class="article-content keep-markdown-body">
                 
 
-                <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> ni, nj, cot=<span class="number">0</span>, maxnum=<span class="number">0</span>, tmpni, tmpnj;</span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; ni &gt;&gt; nj)&#123;</span><br><span class="line">        tmpni = ni, tmpnj = nj;</span><br><span class="line">        <span class="keyword">if</span>(tmpni &gt; tmpnj) <span class="built_in">swap</span>(tmpni, tmpnj);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=tmpni; i&lt;=tmpnj ; i++)&#123;</span><br><span class="line">            cot = <span class="number">0</span>;</span><br><span class="line">            <span class="type">int</span> n=i;</span><br><span class="line">            <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">                cot++;</span><br><span class="line">                <span class="keyword">if</span>(n == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(n%<span class="number">2</span> == <span class="number">1</span>) n = (<span class="number">3</span>*n)+<span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span> n/=<span class="number">2</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(cot &gt; maxnum) maxnum = cot;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        cout &lt;&lt; ni &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; nj &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; maxnum &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+                <p>Question：<a class="link"   target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=c039" >ZJ c039. 00100 - The 3n + 1 problem<i class="fas fa-external-link-alt"></i></a></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> ni, nj, cot=<span class="number">0</span>, maxnum=<span class="number">0</span>, tmpni, tmpnj;</span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; ni &gt;&gt; nj)&#123;</span><br><span class="line">        tmpni = ni, tmpnj = nj;</span><br><span class="line">        <span class="keyword">if</span>(tmpni &gt; tmpnj) <span class="built_in">swap</span>(tmpni, tmpnj);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=tmpni; i&lt;=tmpnj ; i++)&#123;</span><br><span class="line">            cot = <span class="number">0</span>;</span><br><span class="line">            <span class="type">int</span> n=i;</span><br><span class="line">            <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">                cot++;</span><br><span class="line">                <span class="keyword">if</span>(n == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(n%<span class="number">2</span> == <span class="number">1</span>) n = (<span class="number">3</span>*n)+<span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span> n/=<span class="number">2</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(cot &gt; maxnum) maxnum = cot;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        cout &lt;&lt; ni &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; nj &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; maxnum &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
             </div>
 
             

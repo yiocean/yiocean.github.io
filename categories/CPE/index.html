@@ -9,7 +9,7 @@
     
     <title>
         
-            UVa100 |
+            Category: CPE |
         
         Yi&#39;s blog
     </title>
@@ -91,15 +91,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class=""
-                               href="/tags"
-                            >
-                                TAGS
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
+                            <a class="active"
                                href="/categories"
                             >
                                 CATEGORIES
@@ -107,7 +99,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/CPE"
                             >
                                 CPE
@@ -154,17 +146,12 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/tags">TAGS</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
+                    <a class="active"
                        href="/categories">CATEGORIES</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/CPE">CPE</a>
                 </li>
             
@@ -188,17 +175,50 @@
             <div class="main-content">
 
                 
-                    
-<div class="fade-in-down-animation">
-    <div class="page-template-container">
-        
-        
-        <div class="page-template-content keep-markdown-body">
-            
-                <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> ni, nj, cot=<span class="number">0</span>, maxnum=<span class="number">0</span>, tmpni, tmpnj;</span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; ni &gt;&gt; nj)&#123;</span><br><span class="line">        tmpni = ni, tmpnj = nj;</span><br><span class="line">        <span class="keyword">if</span>(tmpni &gt; tmpnj) <span class="built_in">swap</span>(tmpni, tmpnj);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=tmpni; i&lt;=tmpnj ; i++)&#123;</span><br><span class="line">            cot = <span class="number">0</span>;</span><br><span class="line">            <span class="type">int</span> n=i;</span><br><span class="line">            <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">                cot++;</span><br><span class="line">                <span class="keyword">if</span>(n == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(n%<span class="number">2</span> == <span class="number">1</span>) n = (<span class="number">3</span>*n)+<span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span> n/=<span class="number">2</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(cot &gt; maxnum) maxnum = cot;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        cout &lt;&lt; ni &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; nj &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; maxnum &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-            
+                    <div class="fade-in-down-animation">
+    <div class="category-container">
+        <div class="category-name">
+            <i class="fas fa-folder"></i>&nbsp;CPE
         </div>
-        
+        <div class="category-post-list">
+            
+<div class="archive-list-container">
+    
+        <section class="archive-item">
+            <div class="archive-item-header">
+                <span class="archive-year">2023</span>
+                <span class="archive-year-post-count">[2]</span>
+            </div>
+            <ul class="article-list">
+                
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/2023/08/22/UVa118/"
+                        >UVa118</a>
+                        <span class="article-date">08-22</span>
+                    </li>
+                
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/2023/07/07/UVa100/"
+                        >UVa100</a>
+                        <span class="article-date">07-07</span>
+                    </li>
+                
+            </ul>
+        </section>
+    
+</div>
+
+        </div>
+    </div>
+    <div class="category-paginator">
+        <div class="paginator">
+    
+
+    
+</div>
+
     </div>
 </div>
 
